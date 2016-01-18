@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.stechy1.simpletable.Controller">
+   <children>
+   
+       <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+           <columns>
+               <TableColumn fx:id="prgNameColumn" prefWidth="75.0" text="Název programu" />
+               <TableColumn fx:id="prgTimeColumn" prefWidth="75.0" text="Čas programu" />
+           </columns>
+           <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+           </columnResizePolicy>
+       </TableView>
+       <Button mnemonicParsing="false" onAction="#addData" text="Add" />
+   </children>
+</VBox>
